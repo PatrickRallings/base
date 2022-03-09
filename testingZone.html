@@ -1,0 +1,187 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Zone</title>
+</head>
+<body>
+    <ul>
+        <b>ARPANET (Advanced Research Projects Agency Network)</b>
+        <ul>
+            <li>Initial stages of the internet which started ni the late 1960's and early 1970's</li>
+            <li>Government project which sought out the ability for computers to communicate with one another</li>
+        </ul>
+        </li>
+        <br>
+        <b>The Wired Internet</b>
+        <ul>
+            <li>Early stages of the internet utilized existing telephone lines</li>
+            <li>Current iteration of the internet</li>
+            <li>Internet is broken up into subsections/local and regional networks which then connect to backbone networks</li>
+            <li>Backbone
+            <ul>
+                <li>The main base for internet communications</li>
+            </ul>
+            </li>
+            <li>Backbone -&gt; Regional networks -&gt; Local networks -&gt; Users</li>
+            <li>Routers are used to determine which packets of information should be going to which sources
+            <ul>
+                <li>Without routers, computers would have to be connected to each other on a 1 to 1 basis (such as a network of 10 computers requiring 9 cable ports per computer with a network total of 45 different cables)</li>
+            </ul>
+            </li>
+            <li>Modems convert information from our routers/networks into types of information that is manageable by telephone or other infrastructure</li>
+            <li>ISP, or Internet Service Providers, essentially have very powerful routers that route information where it is supposed to go on a massive scale</li>
+        </ul>
+        </li>
+        <br>
+        <b>Addresses (Subnetting)</b>
+        <ul>
+            <li>IP Addresses
+            <ul>
+                <li>Specific address for your network (or your computer, depending on your router setup)
+                <ul>
+                    <li>IP addresses are given through a process called subnetting</li>
+                </ul>
+                </li>
+                <li>Example (IP v4): 123.45.678.9
+                <ul>
+                    <li>IP v6 is a newer type of IP which utilizes the same standard as above but which additional decimals/hexadecimals</li>
+                </ul>
+                </li>
+                <li>Visually looks pretty similar for most routers (1.192.**.***.*) but has a more specific address in the underneath which is constantly being scrambled</li>
+            </ul>
+            </li>
+            <li>MAC Addresses
+            <ul>
+                <li>Addresses specific to an exact device which never changes and is only shared between trusted devices</li>
+                <li>IP address sits on top of this MAC address</li>
+            </ul>
+            </li>
+            <li>Domain (URL, or Uniform Resource Locator)
+            <ul>
+                <li>Location of server that end-users will connect to through their IP</li>
+            </ul>
+            </li>
+            <li>DNS (Domain Name Server)
+            <ul>
+                <li>Servers that essentially contain a large &quot;phonebook&quot; which contains records of all of the domains in their purview</li>
+                <li>They use their domain location information to connect IPs to their various domains</li>
+                <li>They license out domain names</li>
+                <li>&quot;.com&quot;
+                <ul>
+                    <li>They most common ending in a URL</li>
+                    <li>Regulated by the government</li>
+                </ul>
+                </li>
+                <li>&quot;.gov&quot;
+                <ul>
+                    <li>Only government institutions can end their domains in this</li>
+                </ul>
+                </li>
+                <li>&quot;.org&quot;
+                <ul>
+                    <li>Typically for non-profit organizations and larger institutions</li>
+                </ul>
+                </li>
+                <li>&quot;.edu&quot;
+                <ul>
+                    <li>Specifically for educational bodies</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>Order of Addressing
+            <ul>
+                <li>User types in URL</li>
+                <li>DNS receives request</li>
+                <li>DNS returns actual IP address for URL back to user</li>
+                <li>User uses actual IP to locate website</li>
+                <li>Website receives user's IP; at this point both end points have Ips and thus can communicate further without help from DNS</li>
+            </ul>
+            </li>
+            <li>HTTP (Hypertext Transfer Protocol)
+            <ul>
+                <li>An application protocol that defines a language for clients and servers to talk to one another</li>
+            </ul>
+            </li>
+        </ul>
+        </li>
+        <br>
+        <b>Webpages</b>
+        <ul>
+            <li>Websites are essentially just files down to their barebones</li>
+            <li>UNIX (Apache Web Server)
+            <ul>
+                <li>Server that hosts all of the main files for a website</li>
+                <li>Larger websites may not have all of the files on this initial server and will have to pull more files from an Oracle Database</li>
+            </ul>
+            </li>
+            <li>HTML (Hyper Text Markup Language)
+            <ul>
+                <li>The language used to structure and present the text that we usually see within webpages (front-end framework of code)</li>
+                <li>Purely structures the content on a webpage</li>
+                <li>Runs anything that is interacted with on a webpage</li>
+                <li>Uses CSS to stylize the HTML structure</li>
+                <li>HTML has been through several iterations and is currently on HTML5</li>
+            </ul>
+            </li>
+            <li>CSS (Cascading Style Sheets)
+            <ul>
+                <li>Formats the HTML structure visually</li>
+                <li>Allows the content in a webpage to remain the same regardless of style needs
+                <ul>
+                    <li>Example: JavaScript can tell CSS what kind of device, such as a phone or pc, is viewing the website, and allow the client to view the same content as other devices but with CSS code specific to their device's needs</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>JavaScript (JS)
+            <ul>
+                <li>Works with HTML and CSS to provide the actual &quot;motion&quot; for different interactions on a website</li>
+                <li>97% of websites use JavaScript</li>
+                <li>Example: The code behind the action in clicking a button would usually be written in JavaScript</li>
+            </ul>
+            </li>
+            <li>Component files
+            <ul>
+                <li>Code files: Files which host the actual code for websites, such as code written in HTML</li>
+                <li>Assets: Files which hold the various assets that make up a website, which would otherwise be very complex to have inside the base code
+                <ul>
+                    <li>Example: Images, word documents, etc.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+        </ul>
+        </li>
+        <br>
+        <b>Information Systems</b>
+        <ul>
+            <li>Cloud Computing
+            <ul>
+                <li>The use of software and computing processes that take place outside the computer you are on (the software isn't even installed on the client's computer)</li>
+                <li>Examples: iCloud, Google Drive, etc. (even email)
+                <ul>
+                    <li>Most consumer emails, such as Gmail, use cloud computing by storing the account's information and email software externally rather than on the client's device</li>
+                </ul>
+                </li>
+                <li></li>
+            </ul>
+            </li>
+            <li>Private Cloud
+            <ul>
+                <li>A scaled down version of normal cloud computing where the software computing processes take place outside of a client's computer but still within their local network</li>
+                <li>This tool is being utilized more and more as organizations look for efficiency and security</li>
+            </ul>
+            </li>
+            <li>Virtualization
+            <ul>
+                <li>A form of cloud computing where entire computers can be simulated on another computer, usually doing tasks that would not normally be possible on the client computer</li>
+            </ul>
+            </li>
+        </ul>
+        </li>
+    </ul>    
+</body>
+</html>
